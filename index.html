@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Editor</h1>
+        <input type="file" id="upload" accept="image/*">
+        <div class="canvas-container">
+          <div>
+            <h2>Original</h2>
+            <canvas id="originalCanvas"></canvas>
+          </div>
+          <div>
+            <h2>Edited</h2>
+            <canvas id="editedCanvas"></canvas>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="grayscale">Grayscale</button>
+          <button id="blur">Blur</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>      
+    <script src="script.js"></script>
+</body>
+</html>
